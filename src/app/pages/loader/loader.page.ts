@@ -6,7 +6,6 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonItem, IonSpinner } from
 @Component({
   selector: 'app-loader',
   templateUrl: './loader.page.html',
-  styleUrls: ['./loader.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonItem, IonSpinner]
 })
