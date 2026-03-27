@@ -1,24 +1,145 @@
 <ion-content [fullscreen]="true">
-  <section class="flex-center">
+  <section class="flex-center columns">
     <ion-card>
       <ion-card-header>
-        <ion-card-title color="success">Recyclate App</ion-card-title>
-        <ion-card-subtitle color="success">The Best in Recyclate</ion-card-subtitle>
+        <ion-card-title color="success"
+          >Register for Recyclate App</ion-card-title
+        >
+        <ion-card-subtitle color="success"
+          >Create your account</ion-card-subtitle
+        >
       </ion-card-header>
 
       <ion-card-content>
-        <ion-list>
+        <form>
+          <ion-list>
+            <h4>Personal Information</h4>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="First Name"
+                labelPlacement="floating"
+                placeholder="Enter your first name"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="Last Name"
+                labelPlacement="floating"
+                placeholder="Enter your last name"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="email"
+                label="Email"
+                labelPlacement="floating"
+                placeholder="Enter your email"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="password"
+                label="Password"
+                labelPlacement="floating"
+                placeholder="Enter your password"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="password"
+                label="Confirm Password"
+                labelPlacement="floating"
+                placeholder="Confirm your password"
+                required
+              ></ion-input>
+            </ion-item>
 
-          <ion-item>
-            <ion-input type="email" label="Email" labelPlacement="floating" placeholder="Enter text"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input type="password" label="Password" labelPlacement="floating" placeholder="Enter text"></ion-input>
-          </ion-item>
-        </ion-list>
-        <ion-button size="full" color="dark" fill="clear">Forgot Email / Password</ion-button>
-        <ion-button size="full" color="success">Login</ion-button>
-        <ion-button size="full" color="success" fill="clear">Register</ion-button>
+            <h4>User Type</h4>
+            <ion-radio-group>
+              <ion-item>
+                <ion-label>Work Help</ion-label>
+                <ion-radio slot="start" value="work"></ion-radio>
+              </ion-item>
+              <ion-item>
+                <ion-label>Donate</ion-label>
+                <ion-radio slot="start" value="donate"></ion-radio>
+              </ion-item>
+            </ion-radio-group>
+
+            <h4>Address Information</h4>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="Address"
+                labelPlacement="floating"
+                placeholder="Your Address"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="tel"
+                label="Address Number"
+                labelPlacement="floating"
+                placeholder="Your Address Number"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="Neighbourhood"
+                labelPlacement="floating"
+                placeholder="Your Neighbourhood"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="Complement"
+                labelPlacement="floating"
+                placeholder="Any extra information"
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="Zip Code"
+                labelPlacement="floating"
+                placeholder="Your Zip Code"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="State"
+                labelPlacement="floating"
+                placeholder="Your State"
+                required
+              ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input
+                type="text"
+                label="City"
+                labelPlacement="floating"
+                placeholder="Your City"
+                required
+              ></ion-input>
+            </ion-item>
+          </ion-list>
+          <ion-button expand="full" color="success" type="submit"
+            >Register</ion-button
+          >
+        </form>
       </ion-card-content>
     </ion-card>
   </section>
