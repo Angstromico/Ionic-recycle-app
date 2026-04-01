@@ -1,5 +1,6 @@
 ion-content {
   --background: var(--ion-color-success);
+  --overflow: auto;
 }
 
 ion-card {
@@ -7,6 +8,7 @@ ion-card {
   width: 100%;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: none;
 }
 
 ion-list {
