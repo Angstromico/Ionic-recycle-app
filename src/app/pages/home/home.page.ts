@@ -59,6 +59,8 @@ export class HomePage implements OnInit {
       id: '2',
       name: 'John Doe',
       contributions: 50,
+      image:
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_0J2y_uPRMQZHAUsgEBjKUjRKIO5BiGd5FQ&s',
     },
     {
       id: '3',
