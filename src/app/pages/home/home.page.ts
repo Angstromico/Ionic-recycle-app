@@ -12,6 +12,10 @@ import {
   IonItem,
   IonAvatar,
   IonLabel,
+  IonCard,
+  IonCardHeader,
+  IonCardContent,
+  IonIcon,
 } from '@ionic/angular/standalone';
 
 interface IContributors {
@@ -27,6 +31,9 @@ interface IContributors {
   styleUrls: ['./home.page.scss'],
   standalone: true,
   imports: [
+    IonIcon,
+    IonCardHeader,
+    IonCard,
     IonList,
     IonButtons,
     IonContent,
@@ -39,6 +46,7 @@ interface IContributors {
     IonItem,
     IonAvatar,
     IonLabel,
+    IonCardContent,
   ],
 })
 export class HomePage implements OnInit {
