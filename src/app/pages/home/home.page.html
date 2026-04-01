@@ -10,7 +10,7 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     @for (contributor of contributors(); track contributor.id) {
-    <ion-item>
+    <ion-item color="success">
       <ion-avatar slot="start">
         <img [src]="contributor?.image || defaultImg" />
       </ion-avatar>
